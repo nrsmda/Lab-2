@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conference Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #FFC0CB;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #FFC0CB;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #FFC0CB;
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <h2>Conference Registration Form</h2>
+  <label for="fullname">Full Name:</label>
+  <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+  
+  <label for="emailaddress">Email Address:</label>
+  <input type="email" id="emailaddress" name="emailaddress" placeholder="Enter your email address" required>
+  
+  <label for="age">Age:</label>
+  <input type="number" id="age" name="age" value="18" required>
+  
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="male">Male<br>
+  <input type="radio" id="female" name="gender" value="female">Female<br>
+  
+  <label for="country">Country of Residence:</label>
+  <select name="country" id="country">
+  <option value = "Malaysia">Malaysia</option>
+  <option value = "Singapore">Singapore</option>
+  <option value = "Korea">Korea</option>
+  <option value = "Japan">Japan</option>
+  <option value = "Palestine">Palestine</option>
+  </select>
+  <br>
+  
+  <label>Areas of Interest:</label>
+  <input type="checkbox" id="softwaredevelopment" name="areasofinterest" value="Software Development"> Software Development<br>
+  <input type="checkbox" id="datascience" name="areasofinterest" value="Data Science">Data Science<br>
+  <input type="checkbox" id="cybersecurity" name="areasofinterest" value="Cybersecurity">Cybersecurity<br>
+  <input type="checkbox" id="artificialintelligence" name="areasofinterest" value="Artificial Intelligence">Artificial Intelligence<br><br>
+  
+  <label>Experience Level:</label>
+  <input type="radio" id="beginner" name="experiencelevel" value="Beginner">Beginner<br>
+  <input type="radio" id="intermediate" name="experiencelevel" value="Intermediate">Intermediate<br>
+  <input type="radio" id="advanced" name="experiencelevel" value="Advanced">Advanced<br><br>
+  
+  <label for="comments">Comments or Questions:</label>
+  <textarea id="comments" name="comments" rows="4" placeholder="Any comments or questions?"></textarea>
+  
+  <input type="submit" value="Register">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
